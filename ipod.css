@@ -1,0 +1,186 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.head-bar {
+	height: 45px;
+	color: white;
+	background-color: rgb(213, 163, 233);
+	text-shadow: 2px 2px  black;
+}
+.head-bar h1 {
+	text-align: center;
+}
+
+.back-button {
+	margin: 10px;
+	border-radius: 0;
+	background-color: rgb(156, 156, 156);
+	height: 30px;
+	width: 50px;
+	font-size: 22;
+}
+
+/* 
+	Albums 
+			*/
+.albums-album-wrapper {
+	display: inline-block;
+	margin-left: 2px;
+	padding: 7px;
+	width: auto;
+	height: 160px;
+}
+
+.albums-album-art {
+	display: inline-block;
+	width: 131px;
+	height: 150px;
+}
+
+.albums-album-name {
+	margin: 0;
+	text-align: center;
+	font-weight: bold;
+}
+
+.albums-artist-name {
+	margin: 0;
+	text-align: center;
+	font-style: italic;
+	font-size: 13;
+}
+
+/* 
+	Songs 
+			*/
+.songs-info-wrapper {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.songs-album-art {
+	margin: 10px;
+	margin-right: 0;
+	display: inline-block;
+	width: 140px;
+	height: 140px;
+}
+
+.songs-album-name {
+	font-size: 30;
+	margin: 12px;
+	font-weight: bold;
+}
+
+.songs-artist-name {
+	margin: 12px;
+	font-style: italic;
+}
+
+.songs-text-info {
+	
+}
+
+.songs-album-year {
+	margin: 12px;
+}
+
+.songs-list li {
+	border: 1px solid gray;
+	padding-left: 0;
+	margin-top: 6px;
+	margin-right: 5px;
+}
+
+/* 
+	Player 
+			*/
+.player-album-art {
+  width: 80%;
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.player-song-info {
+  text-align: center;
+  color: rgb(186, 80, 228);
+  margin-top: 0;
+  margin-bottom: 2%;
+}
+
+#player-song-name {
+  font-weight: 500;
+  margin-top: 2%;
+  margin-bottom: 0;
+  text-align: center;
+	color: #555555;
+}
+
+.volume-bar {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.volume-level {
+  position: relative;
+  display: inline-block;
+  top: 3%;
+  height: 6px;
+  width: 24px;
+  border: 1px solid black;
+  margin-bottom: 2.5%;
+}
+
+.volume-buttons {
+  margin-top: 0;
+  text-align: center;
+}
+
+.volume-rocker {
+  width: 30%;
+  margin: 5%;
+  margin-top: 2%;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px groove #aaaaaa;
+  box-shadow: 0 1px 1px grey;
+}
+
+.player-controls {
+  text-align: center;
+}
+
+#player-time {
+  margin-left: 8%;
+  margin-right: 8%;
+  width: 90%;
+}
+
+#time-elapsed {
+  display: inline-block;
+  padding: 0;
+  margin-left: 8%;
+  margin-right: 0;
+}
+
+#time-total{
+  float: right;
+  padding: 0;
+  margin-left: 0%;
+  margin-right: 8%;
+}

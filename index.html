@@ -2,23 +2,77 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js"></script>
     <title>Bob Guo's personal webpage</title>
   </head>
 
   <body>
     <div class="nav">
-      <image src="me.png" class="mepic"></image>
+      <image src="me.png" class="mepic"/>
       <div class="navbar">
-        <p class="navitem" id="navitem1">Home</p>
-        <p class="navitem" id="navitem2">About me</p>
-        <p class="navitem" id="navitem3">Resume</p>
-        <p class="navitem" id="navitem4">Contact info</p>
+        <p class="navitem" id="navitem0" onclick="navTo(0)">Home</p>
+        <p class="navitem" id="navitem1" onclick="navTo(1)">About me</p>
+        <p class="navitem" id="navitem2" onclick="navTo(2)">Resume</p>
+        <p class="navitem" id="navitem3" onclick="navTo(3)">Contact info</p>
       </div>
     </div>
 
     <div class="page">
-      <h1 class="sans_serif welcome">Welcome!<div class="smaller">You've discovered Bob Guo's personal website!</div></h1>
+
+      <div id="page0">
+        <h1 class="sans_serif welcome">Welcome!<br/>
+          <span class="smaller">You've discovered Bob Guo's personal website!</span>
+        </h1>
+        <hr>
+        <h2 class="sans_serif projects">My projects</h2>
+        <div class="project">
+          <h3 class="sans_serif project-title">
+            <a href="https://github.com/bobeatslollipop/Metch_up">"Metchup"</a>
+          </h3>
+          <image src="metchup.png" class="metchuppic"/>
+          <p class="sans_serif detail1">A website for finding study groups within Northwestern University. 
+            Applies React and Google Firebase. </p>
+        </div>
+        <div class="project">
+          <h3 class="sans_serif  project-title"><a href="player.html">Music player</a></h3>
+          <image src="player.png" class="playerpic"/>
+          <p class="sans_serif detail2">Proof that I've done my CS330 homework. </p>
+        </div>
+      </div>
+
+      <div id="page1">
+        <h1 class="sans_serif welcome">About me</h1>
+        <p class="sans_serif bio">
+          My name is Anxin "Bob" Guo, and I was born and raised in Beijing, China.
+          I'm currently an undergraduate student in Northwestern University, in the beautiful town of Evanston, Illinois. </br>
+        </p>
+        <p class="sans_serif bio">
+          I'm planning to graduate in 2023 with double major in math and computer science. 
+          I have a great interest in both subjects, and I hope to participate in some undergraduate reasearch during the next 2-3 years.
+        </p>
+        <p class="sans_serif bio">
+          That's it for now -- I'll write more after I actually accomplish something. 
+          The picture on the top left was supposed to be my face, but I couldn't find a good picture of myself right now. 
+        </p>
+
+        <p class="sans_serif bio">
+          -- Bob, June 2020
+        </p>
+      </div>
+
+      <div id="page2">
+        <h2 class="sans_serif resume-title">Last update: March 2020</h2>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <a href="Resume.docx" download=""><button class="btn"><i class="fa fa-download"></i> Download</button></a>
+      </div>
+
+      <div id="page3">
+        <h1 class="sans_serif welcome">Contact info</h1>
+        <p class="sans_serif bio">
+          Email: bobguo2023@u.northewestern.edu
+        </p>
+      </div>
+
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
